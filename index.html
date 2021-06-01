@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <title>Fitness</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fitness Health</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button type="button" class="btn btn-outline-success mx-3" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Log In</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+            Up</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- loginModal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">LogIn</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <h1 class="h3 mb-3 fw-normal">Please Login</h1>
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div> <br>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <br>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- signupModal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <h1 class="h3 mb-3 fw-normal">Please signup</h1>
+            <div class="row">
+              <div class="col form-floating px-1">
+                <input type="text" class="form-control" id="floatingInput" placeholder="First name"
+                  aria-label="First name">
+                <label for="floatingInput">First Name</label>
+              </div>
+              <div class="col form-floating px-1">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Last name"
+                  aria-label="Last name">
+                <label for="floatingInput">Last Name</label>
+              </div>
+            </div>
+            <br>
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <br>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <br>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Comfirm Password</label>
+            </div>
+            <br>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav bar end -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/pic1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Relax Exercise</h5>
+          <p>Make efforts to live a low-stress lifestyle. </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/pic2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>The Best Abs Workout</h5>
+          <p>Exercises You Need to Get a Six-Pack.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/pic3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Be Strong</h5>
+          <p>Exercising your abdominal muscles will strengthen them..</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container col-xxl-8 px-4 py-4">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img class="img-fluid" src="/images/pic4.jpg" class="d-block mx-lg-auto img-fluid" alt="" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h3 class="fw-bolder lh mb-3">From the moment you walk through the door you know Gym is a unique place</h3>
+        <p class="fs-6">When we created Gym Base, we knew we wanted to be more than just a simple gym. Having worked in
+          traditional gyms in the past, we knew we needed to create a concept that would provide our members with the
+          most effective tools for success. This meant we needed to offer a wide range of classes both for children and
+          adults.
+          <br>
+          This also meant we needed to provide a learning environment run by experienced and successful coaches.
+          However, our most important goal was to create a welcoming atmosphere and community in which everyone feels a
+          sense of belonging..
+        </p>
+
+      </div>
+    </div>
+  </div>
+  <div class="px-4 py-3 my-1 text-center">
+    <h1 class="display-5 fw-bold">Foundations for Weight Lifting</h1>
+    <div class="col-lg-6 mx-auto"> <br>
+      <h3 class=" fw-bold">1. DON'T BE HALF-HEARTED</h3>
+      <p class="fs-5">
+        Give this thing everything you've got. Be consistent. Be diligent. Exert yourself. Don't leave any doubt in your
+        mind that you tried as hard as you could. Most importantly: Trust the system. Seriously, you can do this. I'm
+        telling you — paired with the right diet, this program works. The only people who are in great shape who don't
+        use this program are genetic freaks who can just look at a kettle bell and instantly be in good shape. Do every
+        single exercise listed here, and hit every single rep. Look at this program as a debt that you must pay every
+        single day.
+      </p>
+    </div>
+    <div class="col-lg-6 mx-auto"> <br>
+      <h3 class=" fw-bold">2. IT'S OKAY TO SUBSTITUTE EXERCISES</h3>
+      <p class="fs-5">
+        If a certain piece of equipment isn't available (either the gym doesn't have it, or it's crowded) that's okay.
+        Substitute an approximate exercise. Tons of people show up at the gym, can't get the equipment they need, and
+        then just abandon their workouts. Don't do it. If you can't get on the barbell bench press, just grab some
+        dumbbells and do that instead. Or if you have to, jump on a bench press machine. If you can't get the piece of
+        equipment you need, try to look for another weight or machine that can mimic the same movement and work the same
+        muscle, and substitute it. It's better than getting frustrated waiting, losing momentum, and leaving the gym.
+      </p>
+    </div>
+  </div>
+
+  <!-- LATEST -->
+  <section class="py-5 text-center container">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-bolder">LATEST NEWS POSTS</h1>
+    </div>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/images/pic5.jpg" alt="">
+              <div class="card-body">
+                <p class="card-text fw-bold">How to keep your Body Healthy.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p>Try stepping not just forward, but also back and out to each side, with each lunge. Add dumbbells
+                    to lunges once your form is down pat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/images/pic6.jpg" alt="">
+              <div class="card-body">
+                <p class="card-text fw-bold">Push Your Fitness Further With Facilities.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p> Facing down, place your hands slightly wider than shoulder-width apart. Place your toes on the
+                    floor. If that's too hard, start with your knees on the floor. Your body should make a straight line
+                    from shoulders to knees or feet. Keep your rear-end muscles and abs engaged.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="/images/pic7.jpg" alt="">
+              <div class="card-body">
+                <p class="card-text fw-bold">Give your Fitness a Boost with our Gym.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="fs-6">Take a big step forward, keeping your back straight. Bend your front knee to about 90
+                    degrees. Keep weight on your back toes and drop the back knee toward the floor. Don't let the back
+                    knee touch the floor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- trainer -->
+  <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Team Coaches</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+          style="background-image: url('unsplash-photo-3.jpg');">
+          <img src="images/thumb2.jpg" alt="Bootstrap">
+          <h2 class="mx-2 fw-bold">Personal Trainer</h2>
+          <h4 class="mx-2 fw-bold">Steve ken</h4>
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+          style="background-image: url('unsplash-photo-3.jpg');">
+          <img src="images/thumb3.jpg" alt="Bootstrap">
+          <h2 class="mx-2 fw-bold">Crossfit Expert</h2>
+          <h4 class="mx-2 fw-bold">Gloria John</h4>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+          style="background-image: url('unsplash-photo-3.jpg');">
+          <img src="images/about2.jpg" alt="Bootstrap">
+          <h2 class="mx-2 fw-bold">Bodybuilding Coach</h2>
+          <h4 class="mx-2 fw-bold">thomson</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container">
+      <p class="text-center text-danger">copyright &copy 2021. Designed and Developed by Rahul Gupta</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <title>Fitness</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fitness Health</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button type="button" class="btn btn-outline-success mx-3" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Log In</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+            Up</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- loginModal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">LogIn</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <h1 class="h3 mb-3 fw-normal">Please Login</h1>
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div> <br>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <br>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- signupModal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <h1 class="h3 mb-3 fw-normal">Please signup</h1>
+            <div class="row">
+              <div class="col form-floating px-1">
+                <input type="text" class="form-control" id="floatingInput" placeholder="First name"
+                  aria-label="First name">
+                <label for="floatingInput">First Name</label>
+              </div>
+              <div class="col form-floating px-1">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Last name"
+                  aria-label="Last name">
+                <label for="floatingInput">Last Name</label>
+              </div>
+            </div>
+            <br>
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <br>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <br>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Comfirm Password</label>
+            </div>
+            <br>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- container -->
+  <div class="container my-4">
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">WE RAISE YOUR CONFIDENCE <span class="text-muted">It’ll blow your
+            mind.</span></h2>
+        <p class="lead">You can you do them at a gym or at home. Watch the form shown by the trainer in the pictures.
+          Good technique is a must. If you're not active now, it's a good idea to check in with your doctor first,
+          especially if you have been diagnosed with health concerns.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="img-fluid" src="images/about1.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="row featurette d-flex justify-content-center align-items-center my-3">
+      <div class="col-md-7 order-md-2 ">
+        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+            yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how
+          this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="img-fluid" src="images/thumb.jpg" alt="">
+      </div>
+    </div>
+    <div class="row featurette d-flex justify-content-center align-items-center my-3">
+      <div class="col-md-7">
+        <h2 class="featurette-heading"> Weight Lifting </h2>
+        <p class="lead">Practice with a real chair to master this move. First, sit all the way down in the chair and
+          stand back up. Next, barely touch the chair's seat before standing back up. Work up to doing the squats
+          without a chair, keeping the same form.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="img-fluid" src="images/about3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+ 
+  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1">Push yourself because no one else is going to do it for you.</h1>
+      <p class="lead fw-bolder">Regular physical activity can improve your muscle strength and boost your endurance. Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently. And when your heart and lung health improve, you have more energy to tackle daily chores.</p>
+      
+    </div>
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img class="rounded-3" src="images/about4.jpg" alt="" >
+    </div>
+  </div>
+       <!-- trainer -->
+       <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Team Coaches</h2>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+              style="background-image: url('unsplash-photo-3.jpg');">
+              <img src="images/thumb2.jpg" alt="Bootstrap">
+                <h2 class="mx-2 fw-bold">Personal Trainer</h2>
+                <h4 class="mx-2 fw-bold">Steve ken</h4>
+                
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+              style="background-image: url('unsplash-photo-3.jpg');">
+              <img src="images/thumb3.jpg" alt="Bootstrap">
+                <h2 class="mx-2 fw-bold">Crossfit Expert</h2>
+                <h4 class="mx-2 fw-bold">Gloria John</h4>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+              style="background-image: url('unsplash-photo-3.jpg');">
+              <img src="images/about2.jpg" alt="Bootstrap">
+                <h2 class="mx-2 fw-bold">Bodybuilding Coach</h2>
+                <h4 class="mx-2 fw-bold">thomson</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   <!-- footer -->
+   <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container">
+      <p class="text-center text-danger">copyright &copy 2021. Designed and Developed by Rahul Gupta</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Fitness</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fitness Health</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button type="button" class="btn btn-outline-success mx-3" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Log In</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- loginModal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">LogIn</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <h1 class="h3 mb-3 fw-normal">Please Login</h1>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div> <br>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <br>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- signupModal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <h1 class="h3 mb-3 fw-normal">Please signup</h1>
+                        <div class="row">
+                            <div class="col form-floating px-1">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="First name"
+                                    aria-label="First name">
+                                <label for="floatingInput">First Name</label>
+                            </div>
+                            <div class="col form-floating px-1">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Last name"
+                                    aria-label="Last name">
+                                <label for="floatingInput">Last Name</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <br>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <br>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Comfirm Password</label>
+                        </div>
+                        <br>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/blog.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fw-bolder" >Blog Default</h5>
+                    <p>A successful fitness blogger focuses on the reader and the fitness journey they are on.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LATEST -->
+    <section class="py-5 text-center container">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-bolder">This is Our Fitness Daily Blog Updates by Experts</h1>
+        </div>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="images/blog1.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">Fitness helps you think and feel better.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Exercise improves mental health by reducing anxiety, depression, and negative mood and by improving self-esteem and cognitive function. Exercise has also been found to alleviate symptoms such as low self-esteem and social withdrawal.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="images/blog2.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">Tips How to Prepare Meals Fast and Easy.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p> So go for omelets, quiches, pasta, seared lean meat and fish, eggs, rice, raw vegetables and fruit… all of these dishes are easily made in less than 20 minutes… Even less. Also think about recycling your leftovers: some minced cold chicken in an omelet or a salad will always do the trick!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="images/blog3.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">Today is the Best Day to Start Training.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="fs-6">Between 2 p.m. and 6 p.m., your body temperature is at its highest. This may mean you'll be exercising during the window of time your body is most ready, potentially making it the most effective time of day to work out.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="images/blog4.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">Simple Condition for all Around Fitness.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="fs-6">As you build muscle through weight training, your muscle fibers experience microscopic tears. These tears are part of the strength-training process and are often the cause of muscle soreness the day after your workout. As a result, your muscles may swell slightly and retain fluid for a few days after your workout.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="images/blog5.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">OFF season is finished now what?.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="fs-6">When you first start exercises, your heart rate increases quickly, your body heats up, and your muscles fatigue rapidly. But once your body gets used to the new movement and activity level, you'll find that you're heart rate doesn't jump as quickly, you don't get as hot, and your muscles can work harder and for longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="images/blog6.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text fw-bold">How to Maximize Time Spent at the Gym.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="fs-6">Exercising 2 hours a day might be too much. Exercising is an important part of a healthy lifestyle, but too much of it can be bad for you. ... It's hard to mark a firm line between working out hard and being obsessive about it. A two-hour workout daily should be OK if you're otherwise healthy and strong.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <p class="text-center text-danger">copyright &copy 2021. Designed and Developed by Rahul Gupta</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
